@@ -1,0 +1,22 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+<h3>Registrate aqui como cliente:</h3>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table>
+
+            {{ miFormulario.as_table }}
+
+        </table>
+
+        <input type="submit" value="Guardar">
+    </form>
+
+
+{% endblock %}
